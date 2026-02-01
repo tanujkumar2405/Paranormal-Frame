@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Field investigations, site surveys, evidence preservation, and guided tours by Paranormal Frame (AERM). Book research services, packages, and training for paranormal documentation.">
+    <meta name="keywords" content="paranormal investigations, field services, haunted site surveys, paranormal tours, evidence documentation">
+    <link rel="canonical" href="https://paranormalframe.vercel.app/services.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Research & Field Services | Paranormal Frame">
+    <meta property="og:description" content="Field investigations, site surveys, evidence preservation, and guided tours by Paranormal Frame (AERM).">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://paranormalframe.vercel.app/assets/images/long_logo.png">
+    <meta property="og:url" content="https://paranormalframe.vercel.app/services.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Research & Field Services | Paranormal Frame">
+    <meta name="twitter:description" content="Field investigations, site surveys, evidence preservation, and guided tours by Paranormal Frame (AERM).">
+
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="recaptcha-site-key" content="RECAPTCHA_SITE_KEY">
+    <title>Our Research & Field Services | Paranormal Frame</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I book a tour?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Click the Register button on the tour card to pre-select the tour in the contact form. Complete and submit the contact form; we will review your request and confirm registration by email with payment instructions if required." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is payment required to reserve a seat?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A deposit or full payment may be required to secure your seat depending on the tour; payment details are provided after we review your submission." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the tour fee include?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Typically includes round-trip transport from the meeting point, guided access, basic investigation kit use and on-site supervision. Accommodation and meals are usually not included unless explicitly stated." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cancellation and refund policy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Full refund for cancellations 7+ days before the tour. Cancellations within 48 hours are eligible for a 50% refund; exceptions may apply for emergencies or force majeure." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are tours accessible and are minors allowed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Many tours involve walking and uneven terrain. Minors are permitted but must be accompanied by a guardian; specific accessibility details are included in the tour description." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I arrange a private or custom investigation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Select Request Custom Investigation in the tour select, or contact us via the form with details about location, dates, and objectives — we will respond with feasibility, pricing, and scheduling information." }
+        }
+      ]
+    }
+    </script>
+    <script>
+        // Dynamically inject reCAPTCHA v3 script if a real site key is provided in the meta tag.
+        (function(){
+            const meta = document.querySelector('meta[name="recaptcha-site-key"]');
+            const key = meta ? meta.content : null;
+            if (key && key !== 'RECAPTCHA_SITE_KEY') {
+                const s = document.createElement('script');
+                s.src = `https://www.google.com/recaptcha/api.js?render=${key}`;
+                s.async = true; s.defer = true;
+                document.head.appendChild(s);
+            } else {
+                console.warn('reCAPTCHA site key not configured (meta[name="recaptcha-site-key"]).');
+            }
+        })();
+    </script>
+    <style>
+        /* Page-specific small overrides and utilities
+           - Reuse design tokens and variables from the main stylesheet
+           - Keep styles minimal; primary styles come from assets/css/style.css */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .tour-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        /* Use global .card styles for all cards and apply reveal-on-scroll initial state */
+        .card.reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity var(--transition-normal), transform var(--transition-normal);
+        }
+
+        /* Disabled button styling kept consistent across site */
+        .btn[disabled], .btn.disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .btn[disabled], .btn.disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Small responsive tweaks for hero balance */
+        .hero.services-hero .hero-content { max-width: 70%; }
+        @media (max-width: 800px) {
+            .hero.services-hero .hero-content { max-width: 100%; }
+        }
+
+        /* Accessible focus styles for form controls */
+        .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+            outline: 3px solid rgba(75,157,196,0.12);
+            outline-offset: 2px;
+        }
+
+        /* Modal styles moved to assets/css/style.css */
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation (reused) -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/images/logo.png" alt="Anomalous Evidence Logo" class="logo-short">
+                        <img src="assets/images/long_logo.png" alt="Anomalous Evidence" class="logo-long">
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="investigations.html" class="nav-link">Investigations</a></li>
+                    <li><a href="methods.html" class="nav-link">Methods</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero services-hero" aria-labelledby="services-hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="services-hero-title" class="hero-title">Our Research & Field Services</h1>
+                    <p class="hero-subtitle">Independent field research, rigorous documentation, and media production for the study of anomalous phenomena.</p>
+                    <p class="hero-intro">Paranormal Frame operates as the public research division of Anomalous Evidence Research & Media (AERM), offering research services, field investigations, and documentary support designed to preserve and analyze anomalous evidence with scientific care.</p>
+                    <div class="cta-buttons" style="margin-top: var(--spacing-md);">
+                        <a href="#services" class="btn btn-primary">Explore Services</a>
+                        <a href="#tours" class="btn btn-secondary">View Tours</a>
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <img src="assets/images/hero-paranormal.jpg" alt="Field researchers collecting data at a location" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="content-section services-section">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p class="section-subtitle">Research, documentation, and media production aligned with our standards</p>
+            </div>
+
+            <div class="services-grid" role="list">
+                <article class="card reveal-on-scroll" role="listitem">
+                    <div class="card-icon">🔎</div>
+                    <h3 class="card-title">Field Research & Site Documentation</h3>
+                    <p class="card-description">On-site data collection, historical documentation, and calibrated environmental monitoring to create a complete record of anomalous occurrences.</p>
+                </article>
+
+                <article class="card reveal-on-scroll" role="listitem">
+                    <div class="card-icon">🌡️</div>
+                    <h3 class="card-title">Environmental Anomaly Observation</h3>
+                    <p class="card-description">Systematic measurement and monitoring of EMF, thermal, and acoustic variations to detect and triangulate environmental disturbances.</p>
+                </article>
+
+                <article class="card reveal-on-scroll" role="listitem">
+                    <div class="card-icon">🧭</div>
+                    <h3 class="card-title">Myth vs Reality Investigations</h3>
+                    <p class="card-description">Culturally informed investigations that test local narratives against empirical evidence to identify plausible explanations.</p>
+                </article>
+
+                <article class="card reveal-on-scroll" role="listitem">
+                    <div class="card-icon">🧠</div>
+                    <h3 class="card-title">Cultural & Psychological Analysis</h3>
+                    <p class="card-description">Contextual analysis of witness reports and cultural frameworks to understand perception, expectation, and sociocultural influences on reported phenomena.</p>
+                </article>
+
+                <article class="card reveal-on-scroll" role="listitem">
+                    <div class="card-icon">🎥</div>
+                    <h3 class="card-title">Documentary & Digital Media Production</h3>
+                    <p class="card-description">Professional production support for research dissemination: video, audio, and archival-quality documentation for future analysis and public education.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- UPCOMING TOURS / FIELD VISITS -->
+        <section id="tours" class="content-section tours-section">
+            <div class="section-header">
+                <h2>Upcoming Tours & Field Visits</h2>
+                <p class="section-subtitle">Join guided research visits and field surveys — register early to secure your place</p>
+            </div>
+
+            <div class="tour-grid">
+                <article class="card reveal-on-scroll" data-tour-id="tour-1">
+                    <div class="card-header">
+                        <h3>Nahargarh Fort — Jaipur, Rajasthan</h3>
+                        <span class="status-badge inconclusive">Coming Soon</span>
+                    </div>
+                    <p class="card-description">Preliminary surveys at Nahargarh Fort focusing on controlled observational sessions and historical context for reported anomalies. Join the waitlist to be notified when registration opens and for details on meeting points and access.</p>
+                    <div style="margin-top:auto; display:flex; gap:var(--spacing-sm);">
+                        <button class="btn btn-primary" disabled aria-disabled="true" title="Registration opening soon">Register</button>
+                        <a class="card-link" href="services.html?tour=tour-1#contact">Request Details →</a>
+                    </div>
+                </article>
+
+                <article class="card reveal-on-scroll" data-tour-id="tour-4">
+                    <div class="card-header">
+                        <h3>Bhangarh Day Tour — Rajasthan, India</h3>
+                        <span class="status-badge ongoing">Registration Open</span>
+                    </div>
+                    <p class="card-description">Guided day tour of Bhangarh Fort focused on on-site documentation, heritage context, and short field measurements. <strong>Date:</strong> 8 Feb 2026 (Day). Limited seats available.</p>
+                    <div style="margin-top:auto; display:flex; gap:var(--spacing-sm);">
+                        <button class="btn btn-primary" data-tour-register="tour-4">Register</button>
+                        <button class="card-link" type="button" data-tour-info="tour-4">More Info →</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tour Info Modal -->
+        <div id="tour-info-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="tour-info-title" tabindex="-1" style="display:none;">
+            <div class="modal-overlay" data-modal-close></div>
+            <div class="modal-panel" role="document" tabindex="-1">
+                <button class="modal-close" aria-label="Close tour details">&times;</button>
+                <h2 id="tour-info-title">Bhangarh Day Tour — Details</h2>
+                <p class="modal-subtitle"><strong>Date:</strong> 8 Feb 2026 (Day) • <strong>Seats:</strong> 20 (limited)</p>
+                <div class="modal-content">
+                    <h3>Itinerary</h3>
+                    <ul>
+                        <li>08:00 — Meet at Jaipur bus stand / briefing</li>
+                        <li>09:30 — Depart for Bhangarh (approx. 2.5 hrs)</li>
+                        <li>12:00 — On-site documentation, guided tour & field measurements</li>
+                        <li>15:00 — Wrap up and return</li>
+                    </ul>
+                    <h3>Meeting Point & Access</h3>
+                    <p>Meet at the Jaipur Central Bus Stand. Private transport arranged for participants. Comfortable walking shoes and ID required.</p>
+                    <h3>Price & Inclusion</h3>
+                    <p>INR 2,500 per person — includes transport (roundtrip), guided access, and basic investigation kit usage. Food & accommodation not included.</p>
+                    <h3>What to Bring</h3>
+                    <ul>
+                        <li>Valid ID (Aadhar/Passport)</li>
+                        <li>Charged phone/camera</li>
+                        <li>Water bottle & basic snacks</li>
+                        <li>Flashlight, if available</li>
+                    </ul>
+                    <h3>Cancellation Policy</h3>
+                    <p>Full refund if canceled 7+ days before the tour. For cancellations within 48 hours, 50% refund.</p>
+                </div>
+                <div class="modal-actions" style="margin-top:1rem; display:flex; gap:var(--spacing-sm);">
+                    <button class="btn btn-primary" id="modal-register-btn" data-tour-register="tour-4">Register for Bhangarh</button>
+                    <button class="btn btn-secondary" id="modal-ics-btn">Download .ics</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT & TOUR REGISTRATION -->
+        <section class="content-section contact-section">
+            <div class="section-header">
+                <h2 id="contact-section-title">Contact & Tour Registration</h2>
+                <p class="section-subtitle">Reach out to register for a tour or request a custom field investigation</p>
+            </div>
+
+            <!-- Serverless hook example available at: netlify/functions/register.js -->
+            <form id="contact-form" class="contact-form" aria-labelledby="contact-section-title" action="https://formsubmit.co/anomalouseevidence@gmail.com" method="POST" novalidate> 
+                <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <label for="full-name">Full Name
+                        <input id="full-name" name="fullName" type="text" placeholder="Your full name" required>
+                    </label>
+
+                    <label for="email">Email
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                    </label>
+
+                    <label for="phone">Phone
+                        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required>
+                    </label>
+
+                    <label for="select-tour">Select Tour / Investigation
+                        <select id="select-tour" name="tour" required>
+                            <option value="">Choose an option</option>
+                            <option value="tour-1">Nahargarh Fort - Coming Soon</option>
+                            <option value="tour-4">Bhangarh Day Tour - 8 Feb 2026 (Open)</option>
+                            <option value="custom">Request Custom Investigation</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label for="message" style="display:block; margin-top:var(--spacing-md);">Message
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest or provide additional details" required></textarea>
+                </label>
+
+                <div style="margin-top: var(--spacing-md); display:flex; gap:var(--spacing-sm); align-items:center;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://paranormalframe.vercel.app/services.html?success=true">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                    <button type="submit" class="btn btn-primary">Submit Registration</button>
+                    <button type="button" id="contact-reset" class="btn btn-secondary">Reset</button>
+                    <div id="contact-hint" style="color:var(--text-muted); font-size:0.9rem;">Fields marked are required.</div>
+                </div>
+            </form>
+
+            <script>
+                // reCAPTCHA-protected tour registration & contact submit handler.
+                (function() {
+                    // Helper: show confirmation overlay (consistent with FormValidator behavior)
+                    function showConfirmation(title = 'Thank You', text = 'Your submission has been received. We will review it and contact you if it meets our research criteria.'){
+                        const message = document.createElement('div');
+                        message.style.cssText = `
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: var(--bg-secondary);
+                            border: 2px solid var(--accent-cyan);
+                            color: var(--text-primary);
+                            padding: 2rem;
+                            border-radius: 8px;
+                            text-align: center;
+                            z-index: 10000;
+                            min-width: 300px;
+                        `;
+                        message.innerHTML = `
+                            <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">${title}</h3>
+                            <p>${text}</p>
+                        `;
+                        document.body.appendChild(message);
+                        setTimeout(() => {
+                            message.style.opacity = '0';
+                            message.style.transition = 'opacity 0.3s ease-out';
+                            setTimeout(() => message.remove(), 300);
+                        }, 3000);
+                    }
+
+                    // Attach register button handlers
+                    document.querySelectorAll('[data-tour-register]').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const tourId = btn.getAttribute('data-tour-register');
+                            const select = document.getElementById('select-tour');
+                            if (select) {
+                                select.value = tourId;
+                                select.focus();
+                                select.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }
+                        });
+                    });
+
+                    // Preselect tour from URL param (e.g., ?tour=tour-1) and scroll to contact form
+                    (function() {
+                        try {
+                            const params = new URLSearchParams(window.location.search);
+                            const tourParam = params.get('tour');
+                            if (tourParam) {
+                                const select = document.getElementById('select-tour');
+                                if (select) {
+                                    const opt = select.querySelector(`option[value="${tourParam}"]`);
+                                    if (opt) {
+                                        select.value = tourParam;
+                                        select.focus();
+                                    }
+                                }
+
+                                const contactForm = document.getElementById('contact-form');
+                                if (contactForm) {
+                                    contactForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                }
+
+                                // remove tour param but keep hash so user stays at contact section
+                                const originalHash = window.location.hash || '#contact';
+                                params.delete('tour');
+                                const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '') + originalHash;
+                                history.replaceState(null, '', newUrl);
+                            }
+                        } catch (err) {
+                            console.warn('Error pre-selecting tour from URL', err);
+                        }
+                    })();
+
+                    // Reset button handler
+                    const resetBtn = document.getElementById('contact-reset');
+                    if (resetBtn) {
+                        resetBtn.addEventListener('click', () => document.getElementById('contact-form').reset());
+                    }
+
+                    // Protected submit logic for the contact form
+                    const form = document.getElementById('contact-form');
+                    if (form) {
+                        form.addEventListener('submit', async (e) => {
+                            e.preventDefault();
+
+                            try {
+                                const fd = new FormData(form);
+                                const payload = Object.fromEntries(fd.entries());
+
+                                // Honeypot check
+                                if (payload._honey) {
+                                    console.warn('Honeypot triggered, aborting submit.');
+                                    return;
+                                }
+
+                                // Get site key from meta tag
+                                const meta = document.querySelector('meta[name="recaptcha-site-key"]');
+                                const siteKey = meta ? meta.content : null;
+
+                                // Execute reCAPTCHA (if configured)
+                                if (window.grecaptcha && siteKey && siteKey !== 'RECAPTCHA_SITE_KEY') {
+                                    const token = await grecaptcha.execute(siteKey, { action: 'submit' });
+                                    payload.recaptchaToken = token;
+                                }
+
+                                // Attempt serverless submission with token
+                                const res = await fetch('/.netlify/functions/register', {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(payload)
+                                });
+
+                                if (res.ok) {
+                                    const data = await res.json();
+                                    if (data && data.success) {
+                                        showConfirmation();
+                                        form.reset();
+                                        return;
+                                    }
+                                }
+
+                                // If serverless fails, fallback to FormSubmit by posting the form normally (preserve graceful degradation)
+                                console.warn('Serverless submission failed, falling back to FormSubmit');
+                                // Ensure recaptcha token (if any) is injected as hidden input before fallback submit
+                                if (payload.recaptchaToken) {
+                                    let existing = form.querySelector('input[name="recaptchaToken"]');
+                                    if (!existing) {
+                                        const h = document.createElement('input'); h.type='hidden'; h.name='recaptchaToken'; h.value=payload.recaptchaToken; form.appendChild(h);
+                                    } else existing.value = payload.recaptchaToken;
+                                }
+                                form.submit();
+                            } catch (err) {
+                                console.error('Error during protected submit', err);
+                                // fallback: submit form normally
+                                form.submit();
+                            }
+                        });
+                    }
+                })();
+
+                // ===== Tour Info Modal Handlers =====
+                (function() {
+                    const modal = document.getElementById('tour-info-modal');
+                    const modalPanel = modal ? modal.querySelector('.modal-panel') : null;
+                    const overlay = modal ? modal.querySelector('.modal-overlay') : null;
+                    const closeBtn = modal ? modal.querySelector('.modal-close') : null;
+
+                    function openModal() {
+                        if (!modal) return;
+                        modal.setAttribute('aria-hidden','false');
+                        modal.style.display = 'flex';
+                        if (modalPanel) modalPanel.focus();
+                    }
+                    function closeModal() {
+                        if (!modal) return;
+                        modal.setAttribute('aria-hidden','true');
+                        modal.style.display = 'none';
+                    }
+
+                    document.querySelectorAll('[data-tour-info]').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const tourId = btn.getAttribute('data-tour-info');
+                            if (tourId === 'tour-4') {
+                                openModal();
+                            }
+                        });
+                    });
+
+                    if (overlay) overlay.addEventListener('click', closeModal);
+                    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape') closeModal();
+                    });
+
+                    const modalRegisterBtn = document.getElementById('modal-register-btn');
+                    if (modalRegisterBtn) {
+                        modalRegisterBtn.addEventListener('click', () => {
+                            const select = document.getElementById('select-tour');
+                            if (select) {
+                                select.value = modalRegisterBtn.getAttribute('data-tour-register') || 'tour-4';
+                                select.focus();
+                                select.scrollIntoView({behavior:'smooth', block:'center'});
+                            }
+                            closeModal();
+                        });
+                    }
+
+                    const modalIcsBtn = document.getElementById('modal-ics-btn');
+                    if (modalIcsBtn) {
+                        modalIcsBtn.addEventListener('click', () => {
+                            const ics = [
+                                'BEGIN:VCALENDAR',
+                                'VERSION:2.0',
+                                'PRODID:-//Paranormal Frame//Bhangarh Tour//EN',
+                                'BEGIN:VEVENT',
+                                'UID:bhangarh-20260208@paranormalframe.vercel.app',
+                                'DTSTAMP:'+ new Date().toISOString().replace(/[-:]/g,'').split('.')[0] + 'Z',
+                                'DTSTART:20260208T090000Z',
+                                'DTEND:20260208T150000Z',
+                                'SUMMARY:Bhangarh Day Tour — Paranormal Frame',
+                                'DESCRIPTION:Guided day tour of Bhangarh Fort (Paranormal Frame). Meet at Jaipur bus stand. Seats limited.',
+                                'LOCATION:Bhangarh Fort, Rajasthan, India',
+                                'END:VEVENT',
+                                'END:VCALENDAR'
+                            ].join('\r\n');
+                            const blob = new Blob([ics], {type:'text/calendar'});
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'bhangarh-tour-20260208.ics';
+                            document.body.appendChild(a);
+                            a.click();
+                            a.remove();
+                            URL.revokeObjectURL(url);
+                        });
+                    }
+                })();
+            </script>
+        </section>
+
+        <!-- FAQ Section (Services & Tours) -->
+        <section class="content-section faq-section">
+            <div class="section-header">
+                <h2>Services & Tours - Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about tours, booking, and participation</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>How do I book a tour?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click the <strong>Register</strong> button on the tour card, which will pre-select the tour in the contact form. Complete the contact form with your details and submit; we will review your request and confirm registration by email with payment instructions if required.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>Is payment required to reserve a seat?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We will confirm your registration by email. A deposit or full payment may be required to secure your seat depending on the tour; payment methods and instructions are provided after we review your submission.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>What does the tour fee include?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Typical inclusions: round-trip transport from the meeting point, guided access, basic investigation kit use, and on-site supervision. Accommodation and meals are usually not included unless explicitly stated.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>What is the cancellation and refund policy?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Full refund if canceled 7+ days before the tour. Cancellations within 48 hours are eligible for a 50% refund. Exceptions may apply for emergencies or force majeure, which we assess case-by-case.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>Are tours accessible and are minors allowed?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Many of our tours involve walking and uneven terrain. Minors are permitted but must be accompanied by a guardian; specific accessibility information is included in the tour details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <button class="faq-question">
+                        <span>How do I arrange a private or custom investigation?</span>
+                        <span class="faq-icon">^</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Select <strong>Request Custom Investigation</strong> in the tour select, or contact us via the form with details about location, dates, and objectives—we will respond with feasibility, pricing, and scheduling information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- FOOTER (reused) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Paranormal Frame</h4>
+                    <p>Paranormal Frame is the public research division of Anomalous Evidence Research &amp; Media (AERM). We document, analyze, and publish findings from field research performed with methodological rigor.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="investigations.html">Investigations</a></li>
+                        <li><a href="methods.html">Methods</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="investigations.html">Case Studies</a></li>
+                        <li><a href="methods.html">Research Protocols</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal & Compliance</h4>
+                    <ul class="footer-links">
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div style="margin-bottom: var(--spacing-lg);">
+                    <p style="margin-bottom: var(--spacing-sm);"><strong style="color: var(--accent-cyan);">Paranormal Frame</strong> — an initiative of <strong>Anomalous Evidence Research &amp; Media (AERM)</strong></p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">Dedicated to transparent, methodical, and responsible paranormal investigation and documentation.</p>
+                </div>
+
+                <!-- Required legal disclaimer -->
+                <div style="border-top: 1px solid var(--border-color); padding-top: var(--spacing-md); text-align: center;">
+                    <p style="margin-bottom: var(--spacing-xs);">© 2024-2026 Anomalous Evidence Research &amp; Media (AERM). All rights reserved.</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Anomalous Evidence Research &amp; Media (AERM) is an independent research and media organization. Not affiliated with any government or law enforcement agency.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
