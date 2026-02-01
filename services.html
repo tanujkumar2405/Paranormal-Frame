@@ -333,227 +333,53 @@
                     <div id="contact-hint" style="color:var(--text-muted); font-size:0.9rem;">Fields marked are required.</div>
                 </div>
             </form>
-
             <script>
-                // reCAPTCHA-protected tour registration & contact submit handler.
-                (function() {
-                    // Helper: show confirmation overlay (consistent with FormValidator behavior)
-                    function showConfirmation(title = 'Thank You', text = 'Your submission has been received. We will review it and contact you if it meets our research criteria.'){
-                        const message = document.createElement('div');
-                        message.style.cssText = `
-                            position: fixed;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            background: var(--bg-secondary);
-                            border: 2px solid var(--accent-cyan);
-                            color: var(--text-primary);
-                            padding: 2rem;
-                            border-radius: 8px;
-                            text-align: center;
-                            z-index: 10000;
-                            min-width: 300px;
-                        `;
-                        message.innerHTML = `
-                            <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">${title}</h3>
-                            <p>${text}</p>
-                        `;
-                        document.body.appendChild(message);
-                        setTimeout(() => {
-                            message.style.opacity = '0';
-                            message.style.transition = 'opacity 0.3s ease-out';
-                            setTimeout(() => message.remove(), 300);
-                        }, 3000);
-                    }
-
-                    // Attach register button handlers
-                    document.querySelectorAll('[data-tour-register]').forEach(btn => {
-                        btn.addEventListener('click', (e) => {
-                            const tourId = btn.getAttribute('data-tour-register');
-                            const select = document.getElementById('select-tour');
-                            if (select) {
-                                select.value = tourId;
+            // Minimal JS: Preselect tour from URL and handle reset button only
+            (function() {
+                // Preselect tour from URL param (e.g., ?tour=tour-1) and scroll to contact form
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const tourParam = params.get('tour');
+                    if (tourParam) {
+                        const select = document.getElementById('select-tour');
+                        if (select) {
+                            const opt = select.querySelector(`option[value="${tourParam}"]`);
+                            if (opt) {
+                                select.value = tourParam;
                                 select.focus();
-                                select.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             }
-                        });
-                    });
-
-                    // Preselect tour from URL param (e.g., ?tour=tour-1) and scroll to contact form
-                    (function() {
-                        try {
-                            const params = new URLSearchParams(window.location.search);
-                            const tourParam = params.get('tour');
-                            if (tourParam) {
-                                const select = document.getElementById('select-tour');
-                                if (select) {
-                                    const opt = select.querySelector(`option[value="${tourParam}"]`);
-                                    if (opt) {
-                                        select.value = tourParam;
-                                        select.focus();
-                                    }
-                                }
-
-                                const contactForm = document.getElementById('contact-form');
-                                if (contactForm) {
-                                    contactForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                                }
-
-                                // remove tour param but keep hash so user stays at contact section
-                                const originalHash = window.location.hash || '#contact';
-                                params.delete('tour');
-                                const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '') + originalHash;
-                                history.replaceState(null, '', newUrl);
-                            }
-                        } catch (err) {
-                            console.warn('Error pre-selecting tour from URL', err);
                         }
-                    })();
-
-                    // Reset button handler
-                    const resetBtn = document.getElementById('contact-reset');
-                    if (resetBtn) {
-                        resetBtn.addEventListener('click', () => document.getElementById('contact-form').reset());
+                        const contactForm = document.getElementById('contact-form');
+                        if (contactForm) {
+                            contactForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                        // remove tour param but keep hash so user stays at contact section
+                        const originalHash = window.location.hash || '#contact';
+                        params.delete('tour');
+                        const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '') + originalHash;
+                        history.replaceState(null, '', newUrl);
                     }
-
-                    // Protected submit logic for the contact form
-                    const form = document.getElementById('contact-form');
-                    if (form) {
-                        form.addEventListener('submit', async (e) => {
-                            e.preventDefault();
-
-                            try {
-                                const fd = new FormData(form);
-                                const payload = Object.fromEntries(fd.entries());
-
-                                // Honeypot check
-                                if (payload._honey) {
-                                    console.warn('Honeypot triggered, aborting submit.');
-                                    return;
-                                }
-
-                                // Get site key from meta tag
-                                const meta = document.querySelector('meta[name="recaptcha-site-key"]');
-                                const siteKey = meta ? meta.content : null;
-
-                                // Execute reCAPTCHA (if configured)
-                                if (window.grecaptcha && siteKey && siteKey !== 'RECAPTCHA_SITE_KEY') {
-                                    const token = await grecaptcha.execute(siteKey, { action: 'submit' });
-                                    payload.recaptchaToken = token;
-                                }
-
-                                // Attempt serverless submission with token
-                                const res = await fetch('/.netlify/functions/register', {
-                                    method: 'POST',
-                                    headers: { 'Content-Type': 'application/json' },
-                                    body: JSON.stringify(payload)
-                                });
-
-                                if (res.ok) {
-                                    const data = await res.json();
-                                    if (data && data.success) {
-                                        showConfirmation();
-                                        form.reset();
-                                        return;
-                                    }
-                                }
-
-                                // If serverless fails, fallback to FormSubmit by posting the form normally (preserve graceful degradation)
-                                console.warn('Serverless submission failed, falling back to FormSubmit');
-                                // Ensure recaptcha token (if any) is injected as hidden input before fallback submit
-                                if (payload.recaptchaToken) {
-                                    let existing = form.querySelector('input[name="recaptchaToken"]');
-                                    if (!existing) {
-                                        const h = document.createElement('input'); h.type='hidden'; h.name='recaptchaToken'; h.value=payload.recaptchaToken; form.appendChild(h);
-                                    } else existing.value = payload.recaptchaToken;
-                                }
-                                form.submit();
-                            } catch (err) {
-                                console.error('Error during protected submit', err);
-                                // fallback: submit form normally
-                                form.submit();
-                            }
-                        });
-                    }
-                })();
-
-                // ===== Tour Info Modal Handlers =====
-                (function() {
-                    const modal = document.getElementById('tour-info-modal');
-                    const modalPanel = modal ? modal.querySelector('.modal-panel') : null;
-                    const overlay = modal ? modal.querySelector('.modal-overlay') : null;
-                    const closeBtn = modal ? modal.querySelector('.modal-close') : null;
-
-                    function openModal() {
-                        if (!modal) return;
-                        modal.setAttribute('aria-hidden','false');
-                        modal.style.display = 'flex';
-                        if (modalPanel) modalPanel.focus();
-                    }
-                    function closeModal() {
-                        if (!modal) return;
-                        modal.setAttribute('aria-hidden','true');
-                        modal.style.display = 'none';
-                    }
-
-                    document.querySelectorAll('[data-tour-info]').forEach(btn => {
-                        btn.addEventListener('click', (e) => {
-                            const tourId = btn.getAttribute('data-tour-info');
-                            if (tourId === 'tour-4') {
-                                openModal();
-                            }
-                        });
+                } catch (err) {
+                    console.warn('Error pre-selecting tour from URL', err);
+                }
+                // Reset button handler
+                const resetBtn = document.getElementById('contact-reset');
+                if (resetBtn) {
+                    resetBtn.addEventListener('click', () => document.getElementById('contact-form').reset());
+                }
+                // Register button handlers (preselect tour)
+                document.querySelectorAll('[data-tour-register]').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const tourId = btn.getAttribute('data-tour-register');
+                        const select = document.getElementById('select-tour');
+                        if (select) {
+                            select.value = tourId;
+                            select.focus();
+                            select.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
                     });
-
-                    if (overlay) overlay.addEventListener('click', closeModal);
-                    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-                    document.addEventListener('keydown', (e) => {
-                        if (e.key === 'Escape') closeModal();
-                    });
-
-                    const modalRegisterBtn = document.getElementById('modal-register-btn');
-                    if (modalRegisterBtn) {
-                        modalRegisterBtn.addEventListener('click', () => {
-                            const select = document.getElementById('select-tour');
-                            if (select) {
-                                select.value = modalRegisterBtn.getAttribute('data-tour-register') || 'tour-4';
-                                select.focus();
-                                select.scrollIntoView({behavior:'smooth', block:'center'});
-                            }
-                            closeModal();
-                        });
-                    }
-
-                    const modalIcsBtn = document.getElementById('modal-ics-btn');
-                    if (modalIcsBtn) {
-                        modalIcsBtn.addEventListener('click', () => {
-                            const ics = [
-                                'BEGIN:VCALENDAR',
-                                'VERSION:2.0',
-                                'PRODID:-//Paranormal Frame//Bhangarh Tour//EN',
-                                'BEGIN:VEVENT',
-                                'UID:bhangarh-20260208@paranormalframe.vercel.app',
-                                'DTSTAMP:'+ new Date().toISOString().replace(/[-:]/g,'').split('.')[0] + 'Z',
-                                'DTSTART:20260208T090000Z',
-                                'DTEND:20260208T150000Z',
-                                'SUMMARY:Bhangarh Day Tour — Paranormal Frame',
-                                'DESCRIPTION:Guided day tour of Bhangarh Fort (Paranormal Frame). Meet at Jaipur bus stand. Seats limited.',
-                                'LOCATION:Bhangarh Fort, Rajasthan, India',
-                                'END:VEVENT',
-                                'END:VCALENDAR'
-                            ].join('\r\n');
-                            const blob = new Blob([ics], {type:'text/calendar'});
-                            const url = URL.createObjectURL(blob);
-                            const a = document.createElement('a');
-                            a.href = url;
-                            a.download = 'bhangarh-tour-20260208.ics';
-                            document.body.appendChild(a);
-                            a.click();
-                            a.remove();
-                            URL.revokeObjectURL(url);
-                        });
-                    }
-                })();
+                });
+            })();
             </script>
         </section>
 
@@ -682,5 +508,4 @@
 
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
