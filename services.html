@@ -299,19 +299,19 @@
             <form id="contact-form" class="contact-form" aria-labelledby="contact-section-title" action="https://formsubmit.co/anomalouseevidence@gmail.com" method="POST" novalidate> 
                 <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
                     <label for="full-name">Full Name
-                        <input id="full-name" name="fullName" type="text" placeholder="Your full name" required>
+                        <input id="full-name" name="name" type="text" placeholder="Your full name" required autocomplete="name">
                     </label>
 
                     <label for="email">Email
-                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
                     </label>
 
                     <label for="phone">Phone
-                        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required>
+                        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required autocomplete="tel">
                     </label>
 
                     <label for="select-tour">Select Tour / Investigation
-                        <select id="select-tour" name="tour" required>
+                        <select id="select-tour" name="tour" required autocomplete="off">
                             <option value="">Choose an option</option>
                             <option value="tour-1">Nahargarh Fort - Coming Soon</option>
                             <option value="tour-4">Bhangarh Day Tour - 8 Feb 2026 (Open)</option>
@@ -321,8 +321,11 @@
                 </div>
 
                 <label for="message" style="display:block; margin-top:var(--spacing-md);">Message
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest or provide additional details" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest or provide additional details" required autocomplete="off"></textarea>
                 </label>
+
+                <input type="hidden" name="_subject" value="New Tour Registration from Paranormal Frame">
+                <input type="hidden" name="_template" value="table">
 
                 <div style="margin-top: var(--spacing-md); display:flex; gap:var(--spacing-sm); align-items:center;">
                     <input type="hidden" name="_captcha" value="false">
