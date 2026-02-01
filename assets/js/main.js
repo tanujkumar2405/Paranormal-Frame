@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new NavigationManager();
     new ScrollReveal();
     new FormValidator('case-form');
-    new FormValidator('contact-form');
+    // Removed FormValidator for contact-form to allow default submit
     new CaseFilter();
     initSmoothScroll();
 });
