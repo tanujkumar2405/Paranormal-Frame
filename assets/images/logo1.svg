@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1a1f3a"/>
+  
+  <!-- Circle outline -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#00bcd4" stroke-width="2"/>
+  
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#00bcd4" stroke-width="1"/>
+  
+  <!-- Center design - represents documentation/observation -->
+  <!-- Horizontal line -->
+  <line x1="60" y1="100" x2="140" y2="100" stroke="#00bcd4" stroke-width="2"/>
+  
+  <!-- Vertical line -->
+  <line x1="100" y1="60" x2="100" y2="140" stroke="#00bcd4" stroke-width="2"/>
+  
+  <!-- Corner marks - representing observation points -->
+  <circle cx="75" cy="75" r="3" fill="#00bcd4"/>
+  <circle cx="125" cy="75" r="3" fill="#00bcd4"/>
+  <circle cx="75" cy="125" r="3" fill="#00bcd4"/>
+  <circle cx="125" cy="125" r="3" fill="#00bcd4"/>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#00bcd4">ANOMALOUS</text>
+  
+  <!-- Metadata for web -->
+  <metadata>
+    <desc>Anomalous Evidence Research & Media Logo - Documentary Research Symbol</desc>
+  </metadata>
+</svg>
