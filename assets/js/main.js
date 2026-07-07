@@ -228,6 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Removed FormValidator for contact-form to allow default submit
     new CaseFilter();
     initSmoothScroll();
+    // Initialize expandable announcement (if present) and adjust initial layout spacing
+    try { new ExpandableAnnouncementManager(); } catch (e) { /* no banner present */ }
+    // Call adjustLayout after a short delay to allow fonts/images to settle
+    setTimeout(() => adjustLayout(), 120);
 });
 
 // FAQ accordion handler (centralized) - toggles item and collapses other items in same section
@@ -240,8 +244,70 @@ function toggleFAQ(item) {
     if (already) item.classList.remove('active'); else item.classList.add('active');
 }
 
-// Announcement banner logic removed. Banner markup is currently not present in `index.html`.
-// Re-enable dynamic behavior here if a banner is re-added and needs auto-close logic.
+// Announcement banner behavior: expandable details (no dismiss) for mobile
+class ExpandableAnnouncementManager {
+    constructor() {
+        this.banner = document.getElementById('announcement-banner');
+        this.toggleBtn = document.getElementById('announcement-toggle');
+        this.details = document.getElementById('announcement-details');
+        this.init();
+    }
 
-// Announcement dismiss handling removed: banner is permanent by design.
+    init() {
+        if (!this.banner || !this.toggleBtn || !this.details) return;
+
+        // Ensure accessibility initialization
+        this.toggleBtn.setAttribute('aria-expanded', 'false');
+        this.details.hidden = true;
+
+        this.toggleBtn.addEventListener('click', () => this.toggle());
+
+        // Close details when clicking outside (mobile-friendly)
+        document.addEventListener('click', (e) => {
+            if (!this.banner.contains(e.target) && this.details && !this.details.hidden) {
+                this.collapse();
+            }
+        });
+    }
+
+    toggle() {
+        const expanded = this.toggleBtn.getAttribute('aria-expanded') === 'true';
+        if (expanded) this.collapse(); else this.expand();
+    }
+
+    expand() {
+        this.toggleBtn.setAttribute('aria-expanded', 'true');
+        this.details.hidden = false;
+        adjustLayout();
+    }
+
+    collapse() {
+        this.toggleBtn.setAttribute('aria-expanded', 'false');
+        this.details.hidden = true;
+        adjustLayout();
+    }
+}
+
+// Adjust page layout to account for a fixed header and optional announcement banner.
+function adjustLayout() {
+    const header = document.querySelector('.header');
+    const banner = document.getElementById('announcement-banner');
+    const main = document.querySelector('main');
+
+    let offset = 0;
+    if (header) offset += header.offsetHeight || 0;
+    if (banner && window.getComputedStyle(banner).display !== 'none') offset += banner.offsetHeight || 0;
+
+    if (main) {
+        // Use inline style to override CSS calc and ensure accurate spacing on all devices
+        main.style.marginTop = `${offset}px`;
+    }
+
+    // Keep the CSS variable in sync for other components that read it
+    if (header) document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+}
+
+// Recalculate layout on resize/orientation changes
+window.addEventListener('resize', () => adjustLayout());
+window.addEventListener('orientationchange', () => adjustLayout());
 
