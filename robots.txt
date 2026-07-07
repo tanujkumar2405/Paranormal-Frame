@@ -1,0 +1,15 @@
+# Robots.txt for Paranormal Frame
+# This file controls search engine bot access to the website
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.netlify/
+Disallow: /.netlify/functions/
+
+Sitemap: https://paranormalframe.vercel.app/sitemap.xml
+Host: paranormalframe.vercel.app
