@@ -99,7 +99,7 @@
                 </div>
                 
                         <div class="header-social" aria-hidden="false">
-                            <a class="social-link social-whatsapp" href="https://chat.whatsapp.com/EUTGQ8h5XlaLeVBHJWXUXa" target="_blank" rel="noopener" aria-label="Join our WhatsApp community">💬 WhatsApp</a>
+                            <a class="social-link social-whatsapp" href="https://chat.whatsapp.com/EUTGQ8h5XlaLeVBHJWXUXa" target="_blank" rel="noopener" aria-label="Join our WhatsApp community">WhatsApp</a>
                         </div>
                 <button class="hamburger" aria-label="Toggle menu" aria-controls="navigation-menu" aria-expanded="false">
                     <span></span>
@@ -126,11 +126,28 @@
     <!-- Main Content -->
     <main>
         <!-- Announcement: Monthly Open Paranormal Discussion (refined) -->
-        <div id="announcement-banner" class="announcement-banner" role="region" aria-label="Site announcement">
+        <div id="announcement-banner" class="announcement-banner" role="region" aria-label="Site announcement" aria-live="polite">
             <div class="announcement-content">
-                <div class="announcement-left">
-                    <div class="announcement-headline">Free Open Paranormal Discussion — Monthly</div>
-                    <div class="announcement-subtext">Join the AERM team for an open discussion. Limited seats: <span class="announcement-badge" aria-hidden="true">30</span>. To join and receive session details, join our <a href="https://chat.whatsapp.com/EUTGQ8h5XlaLeVBHJWXUXa" target="_blank" rel="noopener" class="highlight-link whatsapp">WhatsApp community</a>, or contact us on <a href="https://www.instagram.com/paranormal_frame.aerm" target="_blank" rel="noopener" class="highlight-link instagram">Instagram</a> or <a href="mailto:anomalouseevidence@gmail.com" class="highlight-link email">email</a>.</div>
+                <!-- Desktop / wide screens: full announcement visible -->
+                <div class="announcement-full">
+                    <div class="announcement-left">
+                        <div class="announcement-headline">Free Open Paranormal Discussion — Monthly</div>
+                        <div class="announcement-subtext">Join the AERM team for an open discussion. Limited seats: <span class="announcement-badge" aria-hidden="true">30</span>. To join and receive session details, join our <a href="https://chat.whatsapp.com/EUTGQ8h5XlaLeVBHJWXUXa" target="_blank" rel="noopener" class="highlight-link whatsapp">WhatsApp community</a>, or contact us on <a href="https://www.instagram.com/paranormal_frame.aerm" target="_blank" rel="noopener" class="highlight-link instagram">Instagram</a> or <a href="mailto:anomalouseevidence@gmail.com" class="highlight-link email">email</a>.</div>
+                    </div>
+                </div>
+
+                <!-- Mobile / very small screens: short headline + toggle (shown only on phones) -->
+                <div class="announcement-mobile">
+                    <div class="announcement-left">
+                        <div class="announcement-headline">Join Free Open Discussion Session</div>
+                        <div class="announcement-subtext">
+                            <span class="announcement-short">Join Free Open Discussion Session</span>
+                            <button id="announcement-toggle" class="announcement-toggle" aria-expanded="false" aria-controls="announcement-details">More</button>
+                        </div>
+                    </div>
+                    <div id="announcement-details" class="announcement-details" hidden>
+                        <p>Limited seats: <span class="announcement-badge" aria-hidden="true">30</span>. To join and receive session details, join our <a href="https://chat.whatsapp.com/EUTGQ8h5XlaLeVBHJWXUXa" target="_blank" rel="noopener" class="highlight-link whatsapp">WhatsApp community</a>, or follow us on <a href="https://www.instagram.com/paranormal_frame.aerm" target="_blank" rel="noopener" class="highlight-link instagram">Instagram</a> or contact us at <a href="mailto:anomalouseevidence@gmail.com" class="highlight-link email">email</a>.</p>
+                    </div>
                 </div>
             </div>
         </div>
