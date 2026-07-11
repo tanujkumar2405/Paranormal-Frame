@@ -1,7 +1,7 @@
 ---
 title: Thermal Imaging in Paranormal Investigations: Understanding Temperature Anomalies Through Scientific Observation
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-08-09
 category: Equipment
 keywords: thermal camera, thermal imaging, infrared camera, paranormal investigation, environmental analysis, temperature anomaly, scientific investigation
 tags:
