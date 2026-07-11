@@ -1,7 +1,7 @@
 ---
 title: What to Expect from an AERM Investigation Workshop: Learning Evidence-Based Paranormal Investigation
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-08-20
 category: Workshop
 keywords: paranormal investigation workshop, AERM workshop, evidence-based investigation training, paranormal research course, investigation workshop India
 tags:
