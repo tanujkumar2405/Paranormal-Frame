@@ -1,7 +1,7 @@
 ---
 title: Systematic Investigation Methodology for Unexplained Reports: A Structured Evidence-Based Approach
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-08-13
 category: Investigation Methods
 keywords: investigation methodology, evidence-based investigation, paranormal investigation, field investigation, scientific methodology, environmental assessment
 tags:
