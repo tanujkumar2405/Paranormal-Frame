@@ -1,7 +1,7 @@
 ---
 title: The History of Paranormal Investigation: From Folklore to Scientific Inquiry
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-05
 category: History
 keywords: history of paranormal investigation, paranormal research, scientific investigation, folklore, psychical research, history of ghost investigation
 tags:
