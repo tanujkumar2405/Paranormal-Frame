@@ -1,7 +1,7 @@
 ---
 title: Understanding Lux Meters in Paranormal Investigations: Measuring Light with Scientific Precision
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-09-03
 category: Equipment
 keywords: lux meter, light measurement, paranormal investigation, environmental analysis, illumination, scientific investigation, AERM
 tags:
