@@ -1,7 +1,7 @@
 ---
 title: Conducting Reliable Witness Interviews in Paranormal Investigations: A Structured Evidence-Based Approach
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-26
 category: Interviews
 keywords: witness interview, paranormal investigation, interviewing witnesses, evidence collection, investigative interviews, scientific investigation
 tags:
