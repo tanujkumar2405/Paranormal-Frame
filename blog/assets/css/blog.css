@@ -1,0 +1,238 @@
+:root {
+  --blog-panel: rgba(17, 24, 39, 0.82);
+  --blog-border: rgba(255, 255, 255, 0.08);
+}
+
+.blog-header {
+  position: sticky;
+}
+
+.blog-shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 7rem 1.25rem 4rem;
+}
+
+.hero-card,
+.article-card,
+.featured-card,
+.summary-card,
+.related-card,
+.blog-preview-card {
+  background: var(--blog-panel);
+  border: 1px solid var(--blog-border);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.hero-card {
+  margin-bottom: 2rem;
+}
+
+.hero-card h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.hero-actions,
+.article-nav,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.75rem 1.1rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent-cyan);
+  color: #07131c;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--blog-border);
+}
+
+.section-heading,
+.blog-preview-section {
+  margin: 2rem 0 1rem;
+}
+
+.card-grid,
+.blog-preview-grid,
+.related-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.featured-card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  align-items: center;
+}
+
+.featured-card img,
+.article-hero {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  max-height: 280px;
+}
+
+.article-card {
+  margin-bottom: 2rem;
+}
+
+.article-header h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 0.75rem;
+}
+
+.article-summary,
+.article-content p,
+.summary-card p,
+.related-card p,
+.blog-preview-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.article-meta,
+.article-tags,
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.article-scheduled {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  color: rgb(96, 165, 250);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.article-meta span,
+.tag-pill,
+.article-tags a {
+  border: 1px solid var(--blog-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.article-body {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+.article-toc {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--blog-border);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.article-toc ol {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.article-toc li + li {
+  margin-top: 0.45rem;
+}
+
+.article-content {
+  min-width: 0;
+}
+
+.article-content h2,
+.article-content h3 {
+  margin-top: 1.5rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.article-content li + li {
+  margin-top: 0.35rem;
+}
+
+.article-content pre {
+  background: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+.article-content blockquote {
+  border-left: 3px solid var(--accent-cyan);
+  padding-left: 1rem;
+  color: var(--text-primary);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--blog-border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.empty-state {
+  color: var(--text-secondary);
+  padding: 1rem 0;
+}
+
+.blog-footer {
+  margin-top: 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+}
