@@ -1,7 +1,7 @@
 ---
 title: How to Think Like an Evidence-Based Investigator: A Guide for Beginners
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-08-06
 category: Education
 keywords: evidence-based investigation, critical thinking, beginner investigator, scientific investigation, paranormal research, AERM
 tags:
