@@ -1,7 +1,7 @@
 ---
 title: Confirmation Bias in Paranormal Investigations: Why Objectivity Matters
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-19
 category: Psychology
 keywords: confirmation bias, paranormal investigation, cognitive bias, critical thinking, evidence-based investigation, scientific methodology
 tags:
