@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node blog/build/generate-blog.js && python blog/build/sync_blog_excel.py",
+    "build": "node blog/build/generate-blog.js",
     "watch": "node blog/build/generate-blog.js --watch",
     "sync:blog-excel": "python blog/build/sync_blog_excel.py",
     "sync:blog-excel:from-excel": "python blog/build/sync_blog_excel.py --apply-excel",
