@@ -1,7 +1,7 @@
 ---
 title: Equipment Reviews in Evidence-Based Investigations: A Scientific Framework for Evaluating Investigation Tools
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-09-10
 category: Equipment Reviews
 keywords: equipment review, investigation equipment, EMF meter review, thermal camera review, evidence-based investigation, scientific equipment evaluation
 tags:
