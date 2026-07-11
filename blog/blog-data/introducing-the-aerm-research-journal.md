@@ -1,7 +1,7 @@
 ---
 title: Introducing the AERM Research Journal: Advancing Evidence-Based Investigation
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-06-28
 category: Announcement
 keywords: AERM Research Journal, paranormal research journal, evidence-based investigation, research publication, scientific investigation
 tags:
