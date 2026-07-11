@@ -1,7 +1,7 @@
 ---
 title: Case Study: Environmental Assessment of an Allegedly Haunted Abandoned School
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-16
 category: Case Studies
 keywords: case study, abandoned school, paranormal investigation, environmental assessment, evidence-based investigation, AERM
 tags:
