@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#08111d"/>
+  <rect x="80" y="80" width="1440" height="740" rx="32" fill="#111827" stroke="#4b9dc4" stroke-width="4"/>
+  <circle cx="310" cy="320" r="120" fill="#4b9dc4" opacity="0.22"/>
+  <path d="M260 600 C410 450, 760 360, 1040 440 S1350 620, 1440 520" stroke="#9ca3af" stroke-width="6" fill="none"/>
+  <rect x="220" y="180" width="420" height="42" rx="20" fill="#e5e7eb" opacity="0.9"/>
+  <rect x="220" y="250" width="560" height="24" rx="12" fill="#9ca3af"/>
+  <rect x="220" y="294" width="470" height="24" rx="12" fill="#9ca3af"/>
+  <text x="220" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="48" fill="#e5e7eb">AERM Research Journal</text>
+</svg>
