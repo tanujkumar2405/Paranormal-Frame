@@ -1,7 +1,7 @@
 ---
 title: Environmental Investigation Methodology: An Evidence-Based Research Framework
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-08-02
 category: Research
 keywords: paranormal investigation, environmental analysis, evidence-based research, investigation methodology, AERM, scientific investigation
 tags:
