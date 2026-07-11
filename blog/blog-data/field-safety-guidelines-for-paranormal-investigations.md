@@ -1,7 +1,7 @@
 ---
 title: Field Safety in Paranormal Investigations: Risk Assessment and Professional Safety Guidelines
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-30
 category: Field Safety
 keywords: field safety, paranormal investigation safety, risk assessment, investigator safety, environmental hazards, field investigation, AERM
 tags:
