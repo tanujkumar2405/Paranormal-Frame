@@ -864,7 +864,9 @@ function generateBlog() {
   buildBlogSitemap(publishedArticles);
   updateRootSitemap(publishedArticles);
 
-  syncBlogExcel();
+  if (process.env.VERCEL !== "1") {
+    syncBlogExcel();
+}
   console.log(`Generated ${articles.length} article(s) for the static blog.`);
 }
 
