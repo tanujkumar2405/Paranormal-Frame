@@ -1,7 +1,7 @@
 ---
 title: Research Ethics and Transparency in the Investigation of Unexplained Phenomena
 author: AERM Editorial Team
-date: 2026-07-07
+date: 2026-07-02
 category: Ethics
 keywords: research ethics, transparency, scientific investigation, evidence-based research, paranormal investigation, public communication
 tags:
