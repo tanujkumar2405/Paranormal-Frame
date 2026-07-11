@@ -1,7 +1,7 @@
 ---
 title: Ghost Hunting Myths vs Evidence: Separating Popular Beliefs from Scientific Investigation
 author: AERM Editorial Team
-date: 2026-07-08
+date: 2026-07-09
 category: Myths vs Facts
 keywords: ghost hunting myths, paranormal myths, evidence-based investigation, scientific investigation, paranormal facts, AERM
 tags:
