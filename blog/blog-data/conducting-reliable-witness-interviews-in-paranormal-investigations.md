@@ -287,7 +287,7 @@ Before concluding a witness interview, confirm that you have documented:
 - □ Detailed description of events
 - □ Follow-up questions
 - □ Supporting photographs or media (if available)
-- □ Contact information (with permission)
+- □ Contact information (with permission).
 
 ---
 
