@@ -139,7 +139,7 @@ A single unusual photograph is definitive evidence.
 
 ### Fact
 
-Images should always be evaluated carefully.
+Images should always be evaluated carefully
 
 Investigators consider:
 
