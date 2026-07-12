@@ -104,7 +104,7 @@ Organizations dedicated to psychical research attempted to document claims syste
 - Written records
 - Experimental procedures
 
-Although many early investigations lacked modern technology, they represented an important shift toward evidence-based inquiry.
+Although many early investigations lacked modern technology, they represented an important shift toward evidence-based inquiry
 
 ---
 
