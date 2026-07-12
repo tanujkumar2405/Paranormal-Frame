@@ -109,7 +109,7 @@ Equipment should withstand:
 - Transportation
 - Extended operation
 
-Build quality influences long-term performance and maintenance requirements.
+Build quality influences long-term performance and maintenance requirements
 
 ---
 
