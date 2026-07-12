@@ -173,7 +173,7 @@ Investigators assess:
 - Acoustic reflections
 - Equipment artifacts
 
-Considering these possibilities strengthens the credibility of the investigation.
+Considering these possibilities strengthens the credibility of the investigation
 
 ---
 
