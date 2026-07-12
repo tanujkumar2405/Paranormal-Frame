@@ -258,7 +258,7 @@ Continuous improvement is fundamental to responsible research.
 
 Investigating unexplained claims requires patience, objectivity, and disciplined methodology.
 
-By emphasizing observation over assumption and evidence over speculation, AERM seeks to contribute meaningful, transparent, and scientifically grounded research to the study of anomalous reports.
+By emphasizing observation over assumption and evidence over speculation, AERM seeks to contribute meaningful, transparent, and scientifically grounded research to the study of anomalous reports
 
 Our commitment remains unchanged:
 
