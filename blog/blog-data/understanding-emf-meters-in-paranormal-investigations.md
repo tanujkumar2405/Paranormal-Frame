@@ -114,7 +114,7 @@ Typical baseline measurements include:
 - Air quality
 - Electromagnetic field levels
 
-Baseline measurements allow investigators to determine whether later changes are unusual or simply part of the normal environment.
+Baseline measurements allow investigators to determine whether later changes are unusual or simply part of the normal environment
 
 ---
 
