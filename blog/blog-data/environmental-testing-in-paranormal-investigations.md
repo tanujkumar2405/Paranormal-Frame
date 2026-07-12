@@ -311,7 +311,7 @@ Before beginning an investigation, consider recording:
 
 # References
 
-The concepts presented in this article are informed by environmental science, occupational hygiene, indoor air quality assessment, environmental engineering, building science, and evidence-based investigative methodology. Investigators are encouraged to consult peer-reviewed environmental research, ISO standards, and environmental monitoring guidelines when conducting field assessments.
+The concepts presented in this article are informed by environmental science, occupational hygiene, indoor air quality assessment, environmental engineering, building science, and evidence-based investigative methodology. Investigators are encouraged to consult peer-reviewed environmental research, ISO standards, and environmental monitoring guidelines when conducting field assessments
 
 ---
 
