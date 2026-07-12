@@ -213,7 +213,7 @@ Environmental acoustics play a significant role in many reports of unexplained s
 
 By combining careful observation, objective measurement, and evidence-based analysis, investigators can better understand the complex relationship between environmental conditions and human perception.
 
-At AERM, unexplained sounds are approached with curiosity, discipline, and scientific responsibility—not assumption.
+At AERM, unexplained sounds are approached with curiosity, discipline, and scientific responsibility—not assumption
 
 > **Every sound has a source. The investigator's responsibility is to discover it through evidence, not expectation.**
 
