@@ -40,7 +40,7 @@ Field safety involves:
 - Team communication
 - Environmental awareness
 - Legal compliance
-- Ethical responsibility
+- Ethical responsibility.
 
 A safe investigation is a professional investigation.
 
