@@ -61,7 +61,7 @@ Responsible investigation is not about proving extraordinary claims—it is abou
 
 # Scientific Integrity Before Conclusions
 
-One of the most important responsibilities of any research organization is to separate **observation** from **interpretation**.
+One of the most important responsibilities of any research organization is to separate **observation** from **interpretation**
 
 An unusual observation does not automatically indicate an extraordinary cause.
 
