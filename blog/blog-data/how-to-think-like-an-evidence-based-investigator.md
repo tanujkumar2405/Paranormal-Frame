@@ -94,7 +94,7 @@ For example:
 
 Only the first statement describes what actually happened.
 
-The second introduces an explanation that requires supporting evidence.
+The second introduces an explanation that requires supporting evidence
 
 Professional investigations always begin with observations.
 
