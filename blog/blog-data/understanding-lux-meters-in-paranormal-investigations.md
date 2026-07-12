@@ -47,7 +47,7 @@ Lighting measurements should always be considered alongside other environmental 
 
 A Lux meter is a scientific instrument used to measure **illuminance**, which is the amount of visible light falling on a surface.
 
-The unit of measurement is **lux (lx)**.
+The unit of measurement is **lux (lx)**
 
 The device uses a calibrated light sensor that approximates the sensitivity of the human eye and converts detected light into a numerical value.
 
