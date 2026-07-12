@@ -64,7 +64,7 @@ Thermal imaging helps investigators:
 - Detect structural irregularities.
 - Support environmental baseline assessments.
 
-These observations provide valuable context during evidence analysis.
+These observations provide valuable context during evidence analysis
 
 ---
 
