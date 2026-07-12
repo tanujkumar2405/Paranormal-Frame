@@ -149,7 +149,7 @@ Professional investigators should:
 - Repeat measurements whenever possible.
 - Preserve original data.
 - Invite peer review.
-- Accept uncertainty when evidence is insufficient.
+- Accept uncertainty when evidence is insufficient
 
 Objectivity is not achieved by eliminating personal beliefs—it is achieved by preventing those beliefs from influencing the evidence.
 
