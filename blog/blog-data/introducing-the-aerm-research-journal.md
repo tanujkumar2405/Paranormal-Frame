@@ -92,7 +92,7 @@ For this reason, AERM is committed to:
 - Honest reporting of limitations.
 - Continuous review and improvement.
 
-Readers are encouraged to evaluate every article thoughtfully and critically.
+Readers are encouraged to evaluate every article thoughtfully and critically
 
 ---
 
