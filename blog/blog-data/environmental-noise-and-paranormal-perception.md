@@ -221,7 +221,7 @@ At AERM, unexplained sounds are approached with curiosity, discipline, and scien
 
 # References
 
-This article draws upon established principles of acoustics, environmental science, building engineering, audio recording practices, and evidence-based investigative methodology. Readers are encouraged to explore peer-reviewed research in architectural acoustics, psychoacoustics, and environmental noise analysis for further study.
+This article draws upon established principles of acoustics, environmental science, building engineering, audio recording practices, and evidence-based investigative methodology. Readers are encouraged to explore peer-reviewed research in architectural acoustics, psychoacoustics, and environmental noise analysis for further study
 
 ---
 
