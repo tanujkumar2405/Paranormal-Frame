@@ -95,7 +95,7 @@ Documentation typically includes:
 - Lighting conditions
 - Time and date records
 
-Accurate documentation creates a permanent record that supports later analysis.
+Accurate documentation creates a permanent record that supports later analysis
 
 ---
 
