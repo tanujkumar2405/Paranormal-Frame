@@ -232,7 +232,44 @@
 }
 
 @media (max-width: 768px) {
+  .blog-shell {
+    padding-top: 6rem;
+  }
+
+  .navbar-container {
+    position: relative;
+  }
+
   .featured-card {
     grid-template-columns: 1fr;
+  }
+
+  .blog-header .hamburger {
+    display: flex;
+    z-index: 1100;
+  }
+
+  .blog-header .nav-menu {
+    display: none;
+  }
+
+  .blog-header .nav-menu.mobile-open {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(10, 13, 18, 0.98);
+    border: 1px solid var(--blog-border);
+    border-radius: 16px;
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .blog-header .nav-menu.mobile-open .nav-link {
+    display: block;
+    padding: 0.85rem 1rem;
   }
 }
