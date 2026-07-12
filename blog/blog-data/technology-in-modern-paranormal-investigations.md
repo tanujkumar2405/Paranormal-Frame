@@ -38,7 +38,7 @@ Modern technology enhances investigations by enabling:
 - Better analytical capabilities
 - Greater transparency and repeatability
 
-Technology supports investigation, but it does not replace scientific reasoning or critical analysis.
+Technology supports investigation, but it does not replace scientific reasoning or critical analysis
 
 ---
 
