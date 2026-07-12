@@ -128,7 +128,7 @@ Rather than presenting these devices as "paranormal detectors," the workshop exp
 
 # Environmental Assessment
 
-A significant portion of the workshop focuses on understanding environmental factors that may influence reported experiences.
+A significant portion of the workshop focuses on understanding environmental factors that may influence reported experiences
 
 Participants learn how to evaluate:
 
