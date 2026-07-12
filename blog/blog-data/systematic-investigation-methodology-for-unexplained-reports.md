@@ -54,7 +54,7 @@ A structured process helps investigators:
 - Maintain evidence integrity.
 - Produce objective conclusions.
 
-Without a standardized workflow, two investigators examining the same location may reach entirely different conclusions based solely on interpretation.
+Without a standardized workflow, two investigators examining the same location may reach entirely different conclusions based solely on interpretation
 
 ---
 
