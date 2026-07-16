@@ -102,7 +102,7 @@ Measurements included:
 - EMF levels
 - Weather conditions
 - Wind direction
-- Background sound levels
+- Background sound levels.
 
 These values established a reference point for later comparison.
 
