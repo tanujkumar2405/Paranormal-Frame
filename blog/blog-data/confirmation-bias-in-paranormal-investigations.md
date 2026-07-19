@@ -46,7 +46,7 @@ Recognizing and managing bias strengthens investigative integrity and improves t
 
 # What is Confirmation Bias?
 
-Confirmation bias is a well-documented psychological phenomenon in which individuals naturally favor information that supports their existing expectations or beliefs.
+Confirmation bias is a well-documented psychological phenomenon in which individuals naturally favor information that supports their existing expectations or beliefs
 
 Rather than evaluating all available evidence equally, people may unintentionally focus on observations that reinforce their assumptions.
 
