@@ -56,7 +56,7 @@ A structured interview helps investigators understand:
 - Who was present.
 - Environmental conditions.
 - Frequency of events.
-- Potential safety concerns.
+- Potential safety concerns
 
 This information shapes the investigation plan and helps identify areas requiring further examination.
 
