@@ -25,7 +25,7 @@ Field investigations often take place in unfamiliar environments, including aban
 
 At **Anomalous Evidence Research & Media (AERM)**, investigator safety is considered a fundamental responsibility. Every investigation begins with a structured assessment of environmental risks before any evidence collection takes place.
 
-No investigation is worth compromising personal safety.
+No investigation is worth compromising personal safety
 
 ---
 
