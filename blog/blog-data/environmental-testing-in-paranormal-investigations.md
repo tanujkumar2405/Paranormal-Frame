@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Environmental Testing in Paranormal Investigations: Understanding the Environment Before Drawing Conclusions
+# Environmental Testing in Paranormal Investigations: Understanding the Environment Before Drawing Conclusions 
 
 > **Before investigating the unexplained, investigators must first understand the environment in which it occurs.**
 
