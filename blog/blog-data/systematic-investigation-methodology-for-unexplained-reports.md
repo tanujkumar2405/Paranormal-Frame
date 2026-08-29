@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Systematic Investigation Methodology for Unexplained Reports: A Structured Evidence-Based Approach
+# Systematic Investigation Methodology for Unexplained Reports: A Structured Evidence-Based Approach 
 
 > **Every investigation should follow a process. A conclusion is only as reliable as the methodology used to reach it.**
 
