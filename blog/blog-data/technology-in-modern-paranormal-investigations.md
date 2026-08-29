@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Technology in Modern Paranormal Investigations: Enhancing Evidence Through Scientific Innovation
+# Technology in Modern Paranormal Investigations: Enhancing Evidence Through Scientific Innovation 
 
 > **Technology does not prove extraordinary claims—it provides investigators with better tools to observe, document, and understand the environment.**
 
