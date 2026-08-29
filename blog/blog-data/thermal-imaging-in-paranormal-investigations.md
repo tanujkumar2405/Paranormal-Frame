@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Thermal Imaging in Paranormal Investigations: Understanding Temperature Anomalies Through Scientific Observation
+# Thermal Imaging in Paranormal Investigations: Understanding Temperature Anomalies Through Scientific Observation 
 
 > **Temperature changes should be measured—not assumed. Thermal imaging allows investigators to visualize heat patterns that are otherwise invisible to the human eye.**
 
