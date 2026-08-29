@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Environmental Noise and Paranormal Perception: Understanding the Science Behind Unexplained Sounds
+# Environmental Noise and Paranormal Perception: Understanding the Science Behind Unexplained Sounds 
 
 > **Not every unexplained sound is extraordinary. Understanding the environment is the first step toward understanding the experience.**
 
