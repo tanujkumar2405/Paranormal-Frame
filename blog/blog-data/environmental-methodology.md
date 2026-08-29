@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Environmental Investigation Methodology: An Evidence-Based Research Framework
+# Environmental Investigation Methodology: An Evidence-Based Research Framework 
 
 > **Evidence before assumption. Observation before conclusion.**
 
