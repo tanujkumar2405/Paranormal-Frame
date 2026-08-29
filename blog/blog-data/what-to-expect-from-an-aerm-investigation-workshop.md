@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# What to Expect from an AERM Investigation Workshop: Learning Evidence-Based Paranormal Investigation
+# What to Expect from an AERM Investigation Workshop: Learning Evidence-Based Paranormal Investigation 
 
 > **A professional investigator is not defined by the equipment they carry, but by the methodology they follow.**
 
