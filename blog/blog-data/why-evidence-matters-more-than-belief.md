@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# Why Evidence Matters More Than Belief: An Editorial on Responsible Investigation
+# Why Evidence Matters More Than Belief: An Editorial on Responsible Investigation 
 
 > **Beliefs may inspire questions, but only evidence can support answers.**
 
