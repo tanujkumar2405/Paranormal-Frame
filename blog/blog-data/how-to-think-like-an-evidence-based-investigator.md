@@ -17,7 +17,7 @@ draft: false
 readingTime: auto
 ---
 
-# How to Think Like an Evidence-Based Investigator: A Guide for Beginners
+# How to Think Like an Evidence-Based Investigator: A Guide for Beginners 
 
 > **A professional investigator does not begin with answers—they begin with questions.**
 
