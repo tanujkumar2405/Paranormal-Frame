@@ -3,7 +3,7 @@ title: The Role of Forensic Science in Paranormal Investigations: Applying Scien
 author: AERM Editorial Team
 date: 2026-08-30
 category: Forensic Science
-keywords: forensic science, paranormal investigation, forensic methodology, evidence collection, crime scene documentation, scientific investigation, AERM
+keywords: forensic science, paranormal investigation, forensic methodology, evidence collection, crime scene documentation, scientific investigation, AERM 
 tags:
   - Forensic Science
   - Investigation
