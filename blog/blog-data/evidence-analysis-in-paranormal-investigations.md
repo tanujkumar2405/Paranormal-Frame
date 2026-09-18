@@ -3,7 +3,7 @@ title: Evidence Analysis in Paranormal Investigations: From Observation to Evide
 author: AERM Editorial Team
 date: 2026-09-06
 category: Evidence Analysis
-keywords: evidence analysis, paranormal investigation, scientific investigation, evidence evaluation, environmental analysis, research methodology
+keywords: evidence analysis, paranormal investigation, scientific investigation, evidence evaluation, environmental analysis, research methodology 
 tags:
   - Evidence Analysis
   - Investigation
