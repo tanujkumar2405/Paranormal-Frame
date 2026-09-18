@@ -3,7 +3,7 @@ title: The Influence of Carbon Monoxide Exposure on Reported Paranormal Experien
 author: AERM Editorial Team
 date: 2026-09-13
 category: Environmental Health
-keywords: carbon monoxide, carbon monoxide poisoning, paranormal investigation, environmental health, indoor air quality, environmental hazards, evidence-based investigation, AERM
+keywords: carbon monoxide, carbon monoxide poisoning, paranormal investigation, environmental health, indoor air quality, environmental hazards, evidence-based investigation, AERM 
 tags:
   - Environmental Health
   - Carbon Monoxide
