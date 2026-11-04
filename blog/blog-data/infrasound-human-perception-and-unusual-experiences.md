@@ -1,7 +1,7 @@
 ---
 title: "The Infrasound Effect: Can Frequencies Below Human Hearing Influence Human Perception?"
 author: AERM Editorial Team
-date: 2026-11-04
+date: 2026-09-17
 category: Environmental Science
 keywords:
   - Infrasound
